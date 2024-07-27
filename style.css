@@ -417,3 +417,234 @@ nav {
     cursor: pointer;
   }
 
+  .quickLink div {
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .quickLink div p:nth-child(1) {
+    color: #6f91c4;
+    font-size: 24px;
+  }
+  
+  .quickLink div p:nth-child(2) {
+    color: #000;
+    font-size: 18px;
+  }
+  
+  /* HERO PAGE */
+  .heroPage {
+    height: 100vh;
+    background: url("main-assets/Hero-Image.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: end;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .heroPage {
+      height: 80vh;
+    }
+  }
+  
+  .linearShade {
+    height: 47vh;
+    width: 100%;
+    background: linear-gradient(transparent, #e3e6e6);
+  }
+  
+  /* CARDS AND PRODUCTS */
+  .cards {
+    padding: 0vh 4vh;
+    position: relative;
+    bottom: 55vh;
+    gap: 18px;
+    height: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  @media screen and (min-width: 1750px) {
+    .cards {
+      margin: auto;
+      max-width: 1700px;
+    }
+  }
+  
+  @media screen and (min-width: 1500px) {
+    .cards :nth-child(9) {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .cards {
+      height: 1105px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 1350px) and (max-width: 1500px) {
+    .cards {
+      max-width: 1350px;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .cards {
+      height: 1545px;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .cards :nth-child(9) {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 900px) and (max-width: 1150px) {
+    .cards {
+      max-width: 900px;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .cards {
+      grid-template-columns: 1fr;
+      height: 4104px;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .cards {
+      height: 3345px;
+    }
+  }
+  
+  .card {
+    padding: 20px;
+    height: 460px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .card {
+      padding: 10px 30px;
+      height: 70vh;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .card {
+      padding: 10px 30px;
+      height: 60vh;
+    }
+  }
+  
+  .card a {
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #017184;
+  }
+  
+  .card a:hover {
+    --red: #c7511f;
+    color: var(--red);
+    text-decoration: 1px solid var(--red) underline;
+  }
+  
+  .cardHeading {
+    padding: 6px 0px;
+    line-height: 1.5;
+    font-size: 21px;
+    font-weight: 700;
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .product {
+    line-height: 1.2;
+  }
+  
+  .product img {
+    height: 78%;
+    width: 100%;
+  }
+  
+  .product p {
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+  }
+  
+  .card:nth-child(1) img {
+    width: 100%;
+  }
+  
+  /* NEW USER */
+  .newUser {
+    padding: 40px 0px 23px 0px;
+    width: 100%;
+    background: #fff;
+  }
+  
+  .newcustomer {
+    padding: 30px 0px 16px 0px;
+    width: 100%;
+    border-radius: 1vh;
+    border: 0.1vh solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .newcustomer div {
+    line-height: 5vh;
+    font-size: 15px;
+  }
+  
+  .newcustomer button {
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 126px;
+    border: 0.3vh solid #b99401;
+    border-radius: 1vh;
+    background: linear-gradient(#ffe39f 20%, #fec52e);
+  }
+  
+  .newcustomer button:hover {
+    cursor: pointer;
+  }
+  
+  .newcustomer p {
+    padding: 5px 0px;
+    font-size: 12px;
+  }
+  
+  .newcustomer a {
+    text-decoration: none;
+    color: #017184;
+  }
+  
+  /* BACK TO TOP */
+  .backTop {
+    height: 52px;
+    background-color: #37475a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
