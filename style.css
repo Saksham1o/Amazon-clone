@@ -249,3 +249,171 @@ nav {
     color: #000;
   }
   
+
+  .ac_info {
+    padding: 10px 5px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .ac_info {
+      display: none;
+    }
+  }
+  
+  .ac_info .first-line {
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .ac_info i {
+    opacity: 0.6;
+    font-size: 10px;
+  }
+  
+  .orders {
+    padding: 10px 5px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .orders {
+      display: none;
+    }
+  }
+  
+  .orders .first-line {
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .cart {
+    padding: 10px 5px;
+    display: flex;
+    align-items: end;
+    gap: 2px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .cart {
+      order: 2;
+    }
+  }
+  
+  .cart i {
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  /* ============== MENU BAR ============= */
+  .menuBar {
+    padding: 5px 15px;
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 1160px) {
+    .menuBar {
+      padding: 10px 15px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .menuBar {
+      display: none;
+    }
+  }
+  
+  .menuBar ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  @media screen and (max-width: 1160px) {
+    .menuBar ul {
+      gap: 6px;
+    }
+  }
+  
+  .menuBar i {
+    font-size: 2.7vh;
+    color: #fff;
+    margin-right: 5px;
+  }
+  
+  .menuBar a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 1160px) {
+    .menuBar a {
+      font-size: 13px;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+  
+    .menuBar a:nth-child(12),
+    .menuBar a:nth-child(11),
+    .menuBar a:nth-child(10),
+    .menuBar a:nth-child(7),
+    .menuBar a:nth-child(3) {
+      display: none;
+    }
+  }
+  
+  .menuBar a:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .menuBar a:nth-child(9) select {
+    font-size: 14px;
+    width: 66px;
+    border: none;
+    background: transparent;
+    color: #fff;
+  }
+  
+  /* QUICK LINK */
+  .quickLink {
+    padding: 5px 30px;
+    border-bottom: 0.3vh solid #eee;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .quickLink {
+      display: none;
+    }
+  }
+  
+  .quickLink ul {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .quickLink h2 {
+    font-size: 18px;
+    margin: 0px 20px;
+  }
+  
+  .quickLink a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+  }
+  
+  .quickLink a:hover {
+    text-decoration: 2px rgb(255, 89, 0) underline;
+    cursor: pointer;
+  }
+
