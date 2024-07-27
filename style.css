@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-background: #e3e6e6;
+  --nav-background: #121821;
+  --searchbox-color: #febd69;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-background);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+/* ============= Reusable Classes =========== */
+.first-line {
+  font-size: 12px;
+  color: #bbb;
+  font-weight: 500;
+}
+
+.second-line {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.ln-height {
+  line-height: 1.1;
+}
+
+.border {
+  padding: 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.border:hover {
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* NOT TO SHOW */
+.category,
+.wishlist,
+.deals,
+.sell,
+.location,
+.sh-part-m,
+.footer-part-sm {
+  display: none;
+}
+
+/* ============== NAVBAR =============== */
+nav {
+    padding: 5px 10px;
+    width: 100%;
+    background-color: var(--nav-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav * {
+    margin: 0px 2px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    nav {
+      padding: 15px 20px;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    bottom: 6px;
+  }
+  
+  nav .logo img {
+    position: relative;
+    width: 110px;
+    top: 9px;
+  }
+  
+  .set_location {
+    padding: 10px 5px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .set_location {
+      order: 1;
+    }
+  }
