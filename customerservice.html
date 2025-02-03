@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/34e8d86a10.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero h2 ,.search .hero{
+      text-align: center;
+      padding: 20px;
+      color: black;
+    }
+
+    .hero1 h2{
+      color: black;
+      padding: 20px;
+      margin-left: 100px;
+    } 
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .services h2{
+      color: black;
+    }
+    .service-card {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      width: 20%; 
+    }
+    .search {
+      text-align: center;
+      padding: 20px;
+      width: auto;
+    }
+
+    #top {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header"></div><br>
+  
+  <main>
+    <section class="hero">
+      <h2>What can we help you with?</h2>
+    </section><hr>
+    <section class="hero1">
+      <h2>Some things you can do here</h2>
+    </section>
+    <section class="services">
+      <div class="service-card">
+        <img src="img/dibba.png" alt="Your Orders">
+        <h3>Your Orders</h3>
+        <ul>
+          <li>Track packages</li>
+          <li>Edit or cancel orders</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="img/return.png" alt="Returns and Refunds">
+        <h3>Returns and Refunds</h3>
+        <ul>
+          <li>Return or exchange items</li>
+          <li>Print return labels</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="img/home.png" alt="Returns and Refunds">
+        <h3>Manage Addresses</h3>
+        <ul>
+          <li>Update your addresses</li>
+          <li>Add address, landmark details</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="img/prime.png" alt="Returns and Refunds">
+        <h3>Manage Prime</h3>
+        <ul>
+          <li>View your benefits</li>
+          <li>Membership details</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="img/wallet.png" alt="Returns and Refunds">
+        <h3>Payment Settings</h3>
+        <ul>
+          <li>Add or edit payment methods</li>
+          <li>Change expired debit or credit card</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="img/account.png" alt="Returns and Refunds">
+        <h3>Account Settings</h3>
+        <ul>
+          <li>Change your email and password</li>
+          <li>Update login information</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="search">
+      <h2 class="hero">Find more solutions  Type something like, "question about a charge"</h2>
+      <form>
+        <input type="text" placeholder="Type your question here" style="width: 400px">
+      </form>
+    </section><br>
+    <hr>
+    <img src="img/last.png">
+  </main>
+  
+  <div id="footer"></div>
+
+</body>
+</html>
